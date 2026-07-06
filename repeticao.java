@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class EstruturaRepeticao {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        // Recebe o nome
+        System.out.print("Digite seu nome: ");
+        String nome = scanner.nextLine();
+
+        // Recebe um número positivo
+        System.out.print("Digite um número positivo: ");
+        int numero = scanner.nextInt();
+
+        // Exibe de 0 até n
+        System.out.println("\nCrescente:");
+        for (int i = 0; i <= numero; i++) {
+            System.out.println(i);
+        }
+
+        // Exibe de n até 0
+        System.out.println("\nDecrescente:");
+        for (int i = numero; i >= 0; i--) {
+            System.out.println(i);
+        }
+
+        // Exibe o nome
+        System.out.println("\nNome:");
+
+        if (nome.length() > 6) {
+            for (int i = 1; i <= numero; i++) {
+                System.out.println(nome);
+            }
+        } else {
+            System.out.println(nome);
+        }
+
+        scanner.close();
+    }
+}
